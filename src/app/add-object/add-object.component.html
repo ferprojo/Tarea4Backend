@@ -1,0 +1,76 @@
+<mat-card style="width: 70%; margin: auto; margin-top: 20px;">
+    <mat-card-header>
+      <mat-card-title><h1>New Product</h1></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+  
+      <mat-form-field appearance="fill" style="margin: auto;">
+        <mat-label>Product Name</mat-label>
+        <input matInput [(ngModel)]="productObject.productName">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" style="margin: auto;">
+        <mat-label>Unit Price</mat-label>
+        <input matInput [(ngModel)]="productObject.unitPrice">
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" (click)="sendProduct()">
+        Send
+      </button>
+  
+  
+    </mat-card-content>
+  </mat-card>
+  
+    
+  
+  <mat-card style="width: 70%; margin: auto; margin-top: 20px;">
+    <mat-card-header>
+      <mat-card-title><h1>New Employee</h1></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+  
+      <mat-form-field appearance="fill" style="margin: auto;">
+        <mat-label>First Name</mat-label>
+        <input matInput [(ngModel)]="employeeObject.firstName">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" style="margin: auto;">
+        <mat-label>Last Name</mat-label>
+        <input matInput [(ngModel)]="employeeObject.lastName">
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" (click)="sendEmployee()">
+        Send
+      </button>
+  
+    </mat-card-content>
+  </mat-card>
+  
+  
+  <mat-card style="width: 70%; margin: auto; margin-top: 20px;">
+    <mat-card-header>
+      <mat-card-title><h1>New Customer</h1></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+  
+      <mat-form-field appearance="fill" style="margin: auto;">
+        <mat-label>Customer ID</mat-label>
+        <input matInput [(ngModel)]="customerObject.customerId">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" style="margin: auto;">
+        <mat-label>Company Name</mat-label>
+        <input matInput [(ngModel)]="customerObject.companyName">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" style="margin: auto;">
+        <mat-label>Contact Name</mat-label>
+        <input matInput [(ngModel)]="customerObject.contactName">
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" (click)="sendCustomer()">
+        Send
+      </button>
+    </mat-card-content>
+  </mat-card>
